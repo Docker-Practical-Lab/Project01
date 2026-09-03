@@ -24,7 +24,153 @@
   }
 }
 
+#site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 32px;
+  border-bottom: 1px solid var(--border);
 
+  @media (max-width: 1024px) {
+    padding: 14px 20px;
+  }
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--text-h);
+  font-weight: 700;
+  font-size: 20px;
+
+  .whale {
+    font-size: 24px;
+    line-height: 1;
+  }
+}
+
+.brand-cyan {
+  color: var(--accent-cyan);
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-h);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition:
+      background 0.2s,
+      color 0.2s;
+
+    &:hover {
+      background: var(--social-bg);
+    }
+
+    .button-icon {
+      height: 16px;
+      width: 16px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    a {
+      font-size: 14px;
+      padding: 8px 10px;
+    }
+  }
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--mono);
+  font-size: 14px;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  padding: 8px 16px;
+  border-radius: 999px;
+  letter-spacing: 0.1px;
+
+  .pulse {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #22c55e;
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6);
+    animation: pulse 2s infinite;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(34, 197, 94, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+  }
+}
+
+.lead {
+  max-width: 560px;
+  margin-inline: auto;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+.action-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 2px solid var(--accent-border);
+  transition:
+    background 0.3s,
+    border-color 0.3s;
+
+  &:hover {
+    background: var(--accent-bg);
+    border-color: var(--accent);
+  }
+}
+
+#site-footer {
+  border-top: 1px solid var(--border);
+  padding: 28px 32px;
+  font-size: 15px;
+
+  strong {
+    color: var(--text-h);
+  }
+}
 
 .hero {
   position: relative;
