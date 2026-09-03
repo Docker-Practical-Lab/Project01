@@ -9,7 +9,34 @@ function App() {
 
   return (
     <>
- 
+      <header id="site-header">
+        <a className="brand" href="https://www.docker.com/" target="_blank">
+          <span className="whale" aria-hidden="true">
+            🐳
+          </span>
+          <span className="brand-text">
+            Docker<span className="brand-cyan">Lab</span>
+          </span>
+        </a>
+        <nav className="site-nav">
+          <a href="https://docs.docker.com/" target="_blank">
+            Docs
+          </a>
+          <a href="https://hub.docker.com/" target="_blank">
+            Docker Hub
+          </a>
+          <a
+            href="https://github.com/Docker-Practical-Lab/Project01"
+            target="_blank"
+            aria-label="Source on GitHub"
+          >
+            <svg className="button-icon" role="presentation" aria-hidden="true">
+              <use href="/icons.svg#github-icon"></use>
+            </svg>
+            Source
+          </a>
+        </nav>
+      </header>
 
       <section id="center">
         <div className="hero">
