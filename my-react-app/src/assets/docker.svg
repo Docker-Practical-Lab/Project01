@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" fill="none">
+  <defs>
+    <linearGradient id="dockerBlue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0DB7ED"/>
+      <stop offset="1" stop-color="#0996CE"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Whale body -->
+  <path fill="url(#dockerBlue)" d="M150 232
+    C150 232 88 226 76 250
+    C 64 274 122 284 172 276
+    C 192 272 208 264 220 258
+    C 245 246 262 240 302 238
+    C 385 232 455 230 502 232
+    C 522 242 522 258 512 266
+    C 497 278 470 280 435 274
+    L 426 294 C 426 304 416 312 406 312
+    L 182 312
+    C 172 312 162 304 162 294
+    L 152 276
+    Z" />
+
+  <!-- Whale tail -->
+  <path fill="url(#dockerBlue)" d="M525 292
+    C 585 268 610 196 600 174
+    C 596 164 584 166 580 178
+    C 575 195 585 232 565 262
+    C 585 224 595 194 598 208
+    C 590 268 560 288 525 300
+    Z" />
+
+  <!-- Whale eye -->
+  <circle cx="205" cy="268" r="6" fill="#ffffff"/>
+
+  <!-- Whale mouth line -->
+  <path fill="none" stroke="#0b86b8" stroke-width="3" stroke-linecap="round" d="M205 282 C 210 290 220 296 235 300"/>
+
+  <!-- Containers / blue boxes stacked on the whale -->
+  <path fill="#ffffff" stroke="#0996CE" stroke-width="3" d="M165 196 h44 v44 h-44 Z"/>
+  <path fill="#ffffff" stroke="#0996CE" stroke-width="3" d="M219 172 h44 v44 h-44 Z"/>
+  <path fill="#ffffff" stroke="#0996CE" stroke-width="3" d="M219 224 h44 v44 h-44 Z"/>
+  <path fill="#ffffff" stroke="#0996CE" stroke-width="3" d="M273 196 h44 v44 h-44 Z"/>
+  <path fill="#ffffff" stroke="#0996CE" stroke-width="3" d="M273 248 h44 v44 h-44 Z"/>
+  <path fill="#ffffff" stroke="#0996CE" stroke-width="3" d="M327 224 h44 v44 h-44 Z"/>
+
+  <!-- Container labels / details -->
+  <g fill="#0DB7ED">
+    <rect x="172" y="203" width="8" height="8" rx="1"/>
+    <rect x="226" y="179" width="8" height="8" rx="1"/>
+    <rect x="226" y="231" width="8" height="8" rx="1"/>
+    <rect x="280" y="203" width="8" height="8" rx="1"/>
+    <rect x="280" y="255" width="8" height="8" rx="1"/>
+    <rect x="334" y="231" width="8" height="8" rx="1"/>
+  </g>
+
+  <!-- Whale blowhole -->
+  <path fill="url(#dockerBlue)" d="M200 240
+    C 200 210 212 196 204 176
+    C 201 168 194 162 190 154
+    C 196 162 202 164 202 172
+    C 206 162 214 158 220 152
+    C 216 164 218 172 216 182
+    C 220 192 218 214 220 232
+    Z"/>
+</svg>
